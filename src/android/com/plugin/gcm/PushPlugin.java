@@ -39,7 +39,7 @@ public class PushPlugin extends CordovaPlugin {
 	 * @return the application context
 	 */
 	private Context getApplicationContext() {
-		return this.cordova.getActivity().getApplicationContext();
+		return this.cordova.getThreadPool().getApplicationContext();
 	}
 
 	@Override
